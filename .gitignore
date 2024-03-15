@@ -1,0 +1,7 @@
+dist/
+wheelhouse/
+ksrdp.egg-info/
+*.so
+__pycache__/
+*.o
+main

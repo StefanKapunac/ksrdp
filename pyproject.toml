@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "pybind11"]
+build-backend = "setuptools.build_meta"
+
+[bdist_wheel]
+platform_tag = "manylinux_2_34"
+
+[project]
+name = "ksrdp"
+version = "0.0.2"
+description = "Protecting graphs under multiple simultaneous attacks: a heuristic approach"
+readme = "README.md"
+authors = [{ name = "Stefan Kapunac", email = "stefankapunac@gmail.com" },
+           { name = "Aleksandar Kartelj", email = "aleksandar.kartelj@gmail.com" },
+           { name = "Marko Djukanovic", email = "marko.djukanovic@pmf.unibl.org" },
+           { name = "Dragan Matic", email = "dragan.matic@pmg.unibl.org" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+keywords = ["Roman domination", "VNS"]
+dependencies = [
+    "pybind11"
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/StefanKapunac/ksrdp"
